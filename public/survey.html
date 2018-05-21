@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Team Finder Survey</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Montserrat+Alternates|Stylish|Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron jumbotron-fluid rounded">
+            <div class="container">
+                <h1 class="display-3">
+                    <i class="material-icons i1">
+                        blur_on
+                    </i>
+                    Team Finder
+                </h1>
+                <hr class="my-2">
+                <p class="lead p1"> Perfect project requires the perfect team!</p>
+                <p class="lead p1"> Please complete the survey and find your dream team...</p>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <h2> About You </h2>
+            <div class="form-group">
+                <label class="lead p1" for="">Your Name:</label>
+                <input type="text" class="form-control " name="name" id="nameId" aria-describedby="helpId" placeholder="Name">
+                <small id="helpId" class="form-text text-muted">Required</small>
+                <label class="lead p1" for="">Link to your photo:</label>
+                <input type="text" class="form-control" name="photo" id="photoId" aria-describedby="helpId" placeholder="Photo">
+                <small id="helpId" class="form-text text-muted">Required</small>
+            </div>
+        </div>
+        <hr>
+
+        <div id="surveyMain" class="form-group">
+            <!-- Survey dynamically inserted here -->
+        </div>
+
+
+        <p class="lead mybutn">
+            <button type="submit" id="surveySubmit" class="btn btn-warning btn-lg btn-block border-dark" href="Jumbo action link" role="button">
+                <i class="material-icons i2">
+                    check_circle_outline
+                </i>
+                Submit
+            </button>
+        </p>
+        <!---Modal-->
+        <div class="modal fade" id="teamModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Here is Your Team!</h5>
+                        <button type="button" class="close" id="closeModal" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card text-center">
+                                        <img class="card-img-top" id="Cp1" src="" alt="">
+                                        <div class="card-body">
+                                            <h4 class="card-title" id="Ct1"></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card text-center">
+                                        <img class="card-img-top" id="Cp2" src="" alt="">
+                                        <div class="card-body">
+                                            <h4 class="card-title" id="Ct2"></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card text-center">
+                                        <img class="card-img-top" id="Cp3" src="" alt="">
+                                        <div class="card-body">
+                                            <h4 class="card-title" id="Ct3"></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card text-center">
+                                        <img class="card-img-top" id="Cp4" src="" alt="">
+                                        <div class="card-body">
+                                            <h4 class="card-title" id="Ct4"></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <hr>
+    <footer class="center">
+        <p class="text-center">
+            <a href="/api/teams">API team Members List</a>
+            |
+            <a href="https://github.com/cberkbiryol/teamFinder.git">GitHub Repo</a>
+        </p>
+    </footer>
+    </div>
+
+    <style>
+        body {
+            font-family: 'Montserrat Alternates', sans-serif;
+        }
+
+        .p1 {
+            font-family: 'Stylish', sans-serif;
+            font-size: 30px
+        }
+
+        h1 {
+            font-family: 'Archivo Black', sans-serif;
+            color: rgb(221, 139, 38)
+        }
+
+        .mybutn {
+            font-family: 'Montserrat Alternates', sans-serif
+        }
+
+        .i1 {
+            font-size: 52px;
+            color: rgb(221, 139, 38)
+        }
+
+        .i2 {
+            font-size: 18px;
+        }
+    </style>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!--Page Function Javascript-->
+    <script>
+        var surveyQ = [{
+            nQ: 1,
+            Q: "You excel in fast-paced, high-intensity collaborative environment"
+        }, {
+            nQ: 2,
+            Q: "You are highly organized with a great attention to detail"
+        }, {
+            nQ: 3,
+            Q: "You are flexible and willing to perform a variety of tasks as assigned"
+        }, {
+            nQ: 4,
+            Q: "You can easily collaborate but excel when working indipendently"
+        }, {
+            nQ: 5,
+            Q: "You can communicate your ideas more efficiently via face-to-face interraction"
+        }, {
+            nQ: 6,
+            Q: "Creativity and innovation is more valuable for you compared to experience"
+        }, {
+            nQ: 7,
+            Q: "You value different approaches towards solution of a problem even if they are not well-established"
+        }, {
+            nQ: 8,
+            Q: "For you, conflict resolution in a team plays a central role when aiming for success"
+        }, {
+            nQ: 9,
+            Q: "For you, a collaboration must contain input of equal importance from all parties"
+        }, {
+            nQ: 10,
+            Q: "You believe integrity of collaborators is the key ingredient for a successful team"
+        }];
+
+        var SurveyResp = {
+            name: "",
+            photo: "",
+            scores: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        };
+
+        surveyQ.forEach(e =>
+            $("#surveyMain").append(`
+                    <h2> Question ${e.nQ}</h2>
+                    <p class="lead p1">
+                        ${e.Q}
+                    </p> 
+                    <div class="col-4">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="Q${e.nQ}">Options</label>
+                            </div>                   
+                            <select class="custom-select surveyQbtn" id="Q${e.nQ}">                   
+                                <option value="0" selected>Select One</option>    
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>                                
+                                <option value="3">3</option>
+                                <option value="4">4</option>                            
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                        </div>   
+                    </div>                 
+                    <hr>
+            `)
+        )
+
+        $(".surveyQbtn").change(function () {
+            var indx = parseInt(this.id.replace(/^Q/g, '')) - 1;
+            SurveyResp.scores[indx] = parseInt(this.value);
+        })
+
+        $("#surveySubmit").on("click", function () {
+            SurveyResp.name = $("#nameId").val().trim();
+            SurveyResp.photo = $("#photoId").val().trim();
+            if (!validate()) return;
+            //console.log(SurveyResp);
+            $.ajax("/api/teams", {
+                type: "POST",
+                data: SurveyResp
+            }).then(function (results) {
+                console.log(JSON.stringify(results, null, 2))
+                results.forEach((e,i)=>{
+                    var ii = i+1
+                    var Cphoto="#Cp"+ii;
+                    var Ctext="#Ct"+ii;
+                    $(Ctext).text(e.name)
+                    $(Cphoto).attr('src',e.photo)
+                    console.log(e.photo)
+                })
+                $("#teamModal").modal('show');
+                $("#closeModal").on('click',function(){location.reload()});               
+            })
+        })
+
+        function validate() {
+            var notAnswered = [];
+            SurveyResp.scores.forEach((e, i) => { if (e == 0) notAnswered.push(i + 1) })
+            if (SurveyResp.name === "") {
+                alert("Please provide a name!")
+                return false
+            } else if (SurveyResp.photo === "") {
+                alert("Please provide a photo!")
+                return false
+            } else if (notAnswered.length > 0) {
+                alert("Please Answer Question(s): " + notAnswered.join(", "))
+                return false
+            }
+            return true
+        }
+    </script>
+</body>
+
+</html>

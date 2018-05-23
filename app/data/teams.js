@@ -1,7 +1,7 @@
 var teams = [
     {
         "name":"Nicolas",
-        "photo":"http://images.indianexpress.com/2018/01/nicolas-cage-759.jpg",
+        "photo":"https://sph.ethz.ch/wp-content/uploads/2017/05/profile-placeholder-200x200.jpg",
         "scores":[
             3,
             5,
@@ -17,7 +17,7 @@ var teams = [
     },
     {
         "name":"Arnold",
-        "photo":"https://www.trashtalktv.com/wp-content/uploads/2016/05/hi-256-0-56fc719498fe1d7a5bc5a900092dcca18ddb6a8b.png",
+        "photo":"https://www.cbtc.org.hk/wp-content/uploads/2017/08/profile-default-male.png",
         "scores":[
             1,
             4,
@@ -33,7 +33,7 @@ var teams = [
     },
     {
         "name":"Sylvester",
-        "photo":"https://i.pinimg.com/236x/de/8a/e2/de8ae2d7ba3abe9493650d72262afc12--silly-faces-judge-dredd.jpg",
+        "photo":"http://ottenlawpc.com/wp-content/uploads/2011/12/attorney-profile-placeholder-200x200.jpg",
         "scores":[
             3,
             4,
@@ -49,7 +49,7 @@ var teams = [
     },
     {
         "name":"Angelina",
-        "photo":"http://img.izismile.com/img/img4/20111223/640/angelina_jolie_funny_640_10.jpg",
+        "photo":"https://carleton.ca/elerg/wp-content/uploads/femalepic_placeholder-200x200.png",
         "scores":[
             4,
             5,
@@ -65,7 +65,7 @@ var teams = [
     },
     {
         "name":"Drew",
-        "photo":"https://i2.wp.com/www.wackyy.org/wp-content/uploads/funny-moments-of-drew-barrymore-02.jpg",
+        "photo":"https://i0.wp.com/www.tcha.us/wp-content/uploads/2016/07/profile-placeholder-lady-suit-200x200.png",
         "scores":[
             5,
             5,
@@ -81,7 +81,7 @@ var teams = [
     },
     {
         "name":"Maya",
-        "photo":"https://lgoogoogaga.files.wordpress.com/2014/11/10424339_10203974096210562_7596396754862127714_n1.jpg",
+        "photo":"https://www.med.unc.edu/radonc/images/staff/female_placeholder.jpg/@@images/7a58786f-cb21-4966-ad98-53558d112118.jpeg",
         "scores":[
             5,
             1,
@@ -97,7 +97,7 @@ var teams = [
     },
     {
         "name":"Leslie",
-        "photo":"http://static6.uk.businessinsider.com/image/54fc671edd0895ae338b4659/snls-incredible-rant-about-whats-wrong-with-nyc.jpg",
+        "photo":"https://static1.squarespace.com/static/581a2ac103596e3016cdd2df/t/583587006b8f5ba7a0c5e4cd/1479903040839/profile+placeholder+woman.jpg",
         "scores":[
             2,
             5,
@@ -112,7 +112,7 @@ var teams = [
         ]
     },{
         "name":"Keegan-Michael",
-        "photo":"https://www.thewrap.com/wp-content/uploads/2015/08/Keegan-Michael-Key_618x764_3_w.jpg",
+        "photo":"https://s3.amazonaws.com/assets.materialup.com/users/pictures/000/269/743/preview/profile_placeholder.png",
         "scores":[
             5,
             5,
